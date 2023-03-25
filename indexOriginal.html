@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- afirma que vai usar o ingles-->
+
+<head>
+    <meta charset="utf-8"> <!-- para poder colocar Ç e  acentos etc-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content ="width=device-widht.initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>AGENDAMENTO DE BANHO E TOSA</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="LOGO.jpG" alt="Logo do Pet shop" <!-- ESSE alt faz com leitor para cego descreva a imagem. ajuda na acessibilidade-->
+        <h1 class="title" > AGENDAMENTO BANHO E TOSA</h1>
+    </header>
+
+
+    <section id="sec-form">
+        <div>
+            <form onsubmit="addPet()"">
+                <label for="petName"> Nome do Pet  *</label>                    
+                <input type="text" required id="fname" name="petName">
+
+                <label for="petBreed"> Raça  *</label>                    
+                <input type="text" required id="fbreed" name="petBreed">
+
+                <label for="petOwner"> Dono do Pet * </label>                    
+                <input type="text" required id="fname" name="petOwner">
+
+                <label for="petPhone "> Telefone * </label>                    
+                <input type="text" required id="fphone" name="petPhone" style="margin-bottom: 2rem;">
+
+                <button type="submit"> Agendar Pet </button>
+            </form>
+        </div>
+
+        <div>
+            <table id="dataTable">
+                <tr>
+                    <th>ID</th>
+                    <th>Nome do pet</th>
+                    <th>Raça</th>
+                    <th>Dono de Pet</th>
+                    <th>Telefone</th>
+                    <th>Remover</th>
+                </tr>
+            </table>
+        </div>
+
+    </section>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

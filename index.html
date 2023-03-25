@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Medicamentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="menu">
+        <div>Home</div>
+        <div>Cadastro<br> de Medicamentos</div>
+        <div>Cadastro<br>  de Vacinas</div>
+        <div>Cadastro<br>  de Comseticos</div>
+    </nav>
+    <header>
+        
+        <img src="remedio.png">
+        <div>
+            <h1>Cadastro de Medicamentos</h1>
+            <h2>Farmacia da Gente</h2>
+        </div>
+    </header>
+    <section>
+        <form onsubmit="addRemedio()">
+           
+                <label for="remedioName"> Nome do Medicamento  *</label>                    
+                <input type="text" required id="fname" name="remedioName">
+
+                <label for="remedioQuantidade"> Quantidade disponivel  *</label>                    
+                <input type="text" required id="fquantidade" name="remedioQuantidade">
+
+                <label for="remedioPreco"> Preço por unidade * </label>                    
+                <input type="text" required id="fpreco" name="remedioPreco">
+
+                <label for="remedioClasse "> Classe de medicamento * </label>                    
+                <input type="text" required id="fclasse" name="remedioClasse" style="margin-bottom: 2rem;">
+
+                <button type="submit"> Agendar Pet </button>
+            </form>
+        </form>
+        <div>
+            <table id="dataTable">
+                <tr>
+                    <th>Nome do remedio</th>
+                    <th>Nome do pet</th>
+
+                </tr>
+            </table>
+        </div>
+    </section>
+    
+</body>
+</html>
